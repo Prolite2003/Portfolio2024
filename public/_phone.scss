@@ -64,6 +64,9 @@
                             li {
                                 a {
                                     letter-spacing: 0.05em;
+                                    &:hover {
+                                        letter-spacing: 0.05em !important;
+                                    }
                                 }
                             }
                         }

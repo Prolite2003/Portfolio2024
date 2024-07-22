@@ -240,6 +240,9 @@ body {
   .main .main-container .main-container-inner .inner-container main.info-field ul li a {
     letter-spacing: 0.05em;
   }
+  .main .main-container .main-container-inner .inner-container main.info-field ul li a:hover {
+    letter-spacing: 0.05em !important;
+  }
 }
 @media screen and (max-height: 44em) {
   .main .main-container .main-container-inner .inner-container main.info-field .usefull-links h2 {
@@ -277,5 +280,8 @@ body {
   }
   .main .main-container .main-container-inner .inner-container main.info-field ul li a {
     letter-spacing: 0.05em;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field ul li a:hover {
+    letter-spacing: 0.05em !important;
   }
 }

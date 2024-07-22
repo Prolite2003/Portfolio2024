@@ -1,5 +1,4 @@
 @media screen and (min-width: 50em) and (max-width: 81em) {
-
     .main {
         .main-container {
             .main-container-inner {
@@ -23,6 +22,9 @@
                             li {
                                 a {
                                     letter-spacing: 0.05em;
+                                    &:hover {
+                                        letter-spacing: 0.05em !important;
+                                    }
                                 }
                             }
                         }
