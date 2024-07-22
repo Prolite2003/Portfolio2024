@@ -1,0 +1,281 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #d1d1d1;
+  background: #1d1d20;
+  font-family: CustomFont;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.checked {
+  color: orange;
+}
+
+@keyframes HideShowAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.main .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.main .main-container .main-container-inner {
+  width: 77.5em;
+  height: 47em;
+  background: radial-gradient(circle at 100% 100%, #1d1d20 0, #1d1d20 5px, transparent 5px) 0% 0%/15px 15px no-repeat, radial-gradient(circle at 0 100%, #1d1d20 0, #1d1d20 5px, transparent 5px) 100% 0%/15px 15px no-repeat, radial-gradient(circle at 100% 0, #1d1d20 0, #1d1d20 5px, transparent 5px) 0% 100%/15px 15px no-repeat, radial-gradient(circle at 0 0, #1d1d20 0, #1d1d20 5px, transparent 5px) 100% 100%/15px 15px no-repeat, linear-gradient(#1d1d20, #1d1d20) 50% 50%/calc(100% - 20px) calc(100% - 30px) no-repeat, linear-gradient(#1d1d20, #1d1d20) 50% 50%/calc(100% - 30px) calc(100% - 20px) no-repeat, linear-gradient(135deg, transparent 75%, #00ffff 80%, #90ee90 100%), linear-gradient(315deg, transparent 75%, #90ee90 80%, #00ffff 100%);
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: content-box;
+}
+.main .main-container .main-container-inner .inner-container {
+  width: 97.5%;
+  height: 96%;
+  padding: 2em;
+}
+.main .main-container .main-container-inner .inner-container header {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main-container .main-container-inner .inner-container header div.logo img {
+  height: 3em;
+  width: 3em;
+  transition: all 0.1s ease-in-out;
+  border-radius: 50%;
+}
+.main .main-container .main-container-inner .inner-container header div.logo img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.main .main-container .main-container-inner .inner-container header div ul {
+  list-style: none;
+  display: flex;
+}
+.main .main-container .main-container-inner .inner-container header div ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+.main .main-container .main-container-inner .inner-container header div ul li a {
+  margin-right: 1.5em;
+}
+.main .main-container .main-container-inner .inner-container header div ul li a i {
+  transition: all 0.1s ease-in-out;
+  border-radius: 25%;
+  color: #777;
+}
+.main .main-container .main-container-inner .inner-container header div ul li a i:hover {
+  color: #ccc;
+  transform: scale(1.2);
+}
+.main .main-container .main-container-inner .inner-container main.info-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4em;
+  width: 70.6em;
+  height: 36.8em;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box {
+  flex-basis: 53%;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box div span {
+  border-left: 3px solid yellow;
+  display: block;
+  border-image: linear-gradient(180deg, lightgreen, aqua) 1;
+  padding-left: 0.5em;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box .welcome {
+  opacity: 1;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box .link {
+  position: relative;
+  animation: HideShowAnimation 1s linear;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box .link ul {
+  list-style: none;
+  max-height: 20em;
+  overflow: scroll;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box .link ul li {
+  padding: 0.1em;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box .link ul li i {
+  font-size: 0.5em;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box .link ul li h3 {
+  color: #A3D2D5;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box .cvbtn,
+.main .main-container .main-container-inner .inner-container main.info-field .text-box .textbtns {
+  padding-top: 2em;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box span {
+  padding-left: 0.5em;
+  display: inline-block;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box span span {
+  border: none;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box span a.cv {
+  display: flex;
+  justify-content: center;
+  width: 10%;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box span a {
+  position: relative;
+  padding: 0.5em;
+  color: lightgreen;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
+  text-shadow: 0 0 15px lightgreen;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box span a:hover {
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px lightgreen;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box span a::before {
+  content: "";
+  border-radius: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: lightgreen;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .text-box span a:hover::before {
+  transform: scale(1);
+  box-shadow: 0 0 10px lightgreen, 0 0 30px lightgreen, 0 0 60px lightgreen;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .usefull-links {
+  flex-basis: 31%;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .usefull-links ul {
+  list-style: none;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .usefull-links ul li {
+  list-style: none;
+  padding: 0.5em;
+  padding-left: 0;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .usefull-links ul li a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid yellow;
+  border-image: linear-gradient(45deg, lightgreen, aqua) 1;
+  transition: all 0.1s ease-in-out;
+}
+.main .main-container .main-container-inner .inner-container main.info-field .usefull-links ul li a:hover {
+  letter-spacing: 0.1em;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 50em) {
+  .main .main-container .main-container-inner {
+    width: 90%;
+    height: 90%;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+    width: 80%;
+    height: 100%;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field .text-box .link ul {
+    max-height: 15em;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field #CampingText,
+  .main .main-container .main-container-inner .inner-container main.info-field #PortfolioText,
+  .main .main-container .main-container-inner .inner-container main.info-field #MainText,
+  .main .main-container .main-container-inner .inner-container main.info-field #SpoilAppText {
+    height: 10em;
+    overflow: scroll;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field span.textbtns {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0.5em;
+    text-align: center;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field span.textbtns a {
+    font-size: 0.8em;
+    width: 6.5em;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field span span:nth-child(1) {
+    max-height: 10em;
+    overflow: scroll;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field ul li a {
+    letter-spacing: 0.05em;
+  }
+}
+@media screen and (max-height: 44em) {
+  .main .main-container .main-container-inner .inner-container main.info-field .usefull-links h2 {
+    text-align: center;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field .usefull-links .links-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-height: 33em) {
+  .main .main-container .main-container-inner .inner-container main.info-field .usefull-links h2 {
+    text-align: center;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field .usefull-links .links-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 50em) and (max-width: 81em) {
+  .main .main-container .main-container-inner {
+    width: 90%;
+    height: 90%;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field {
+    width: 80%;
+    height: 100%;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field .text-box .link ul {
+    max-height: 15em;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field ul li a {
+    letter-spacing: 0.05em;
+  }
+}

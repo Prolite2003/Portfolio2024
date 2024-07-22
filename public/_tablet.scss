@@ -1,0 +1,34 @@
+@media screen and (min-width: 50em) and (max-width: 81em) {
+
+    .main {
+        .main-container {
+            .main-container-inner {
+                width: 90%;
+                height: 90%;
+
+                .inner-container {
+                    main.info-field {
+                        width: 80%;
+                        height: 100%;
+
+                        .text-box {
+                            .link {
+                                ul {
+                                    max-height: 15em;
+                                }
+                            }
+                        }
+
+                        ul {
+                            li {
+                                a {
+                                    letter-spacing: 0.05em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

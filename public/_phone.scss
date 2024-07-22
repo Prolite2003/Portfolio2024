@@ -1,0 +1,129 @@
+@media screen and (max-width: 50em) {
+    // @keyframes HideShowAnimation {
+    //     0% {
+    //         opacity: 0;
+    //     }
+
+    //     100% {
+    //         opacity: 1;
+    //     }
+    // }
+
+    .main {
+        .main-container {
+            .main-container-inner {
+                width: 90%;
+                height: 90%;
+
+                .inner-container {
+                    main.info-field {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding-left: 0;
+                        width: 80%;
+                        height: 100%;
+
+                        .text-box {
+                            .link {
+                                ul {
+                                    max-height: 15em;
+                                }
+                            }
+                        }
+
+                        #CampingText,
+                        #PortfolioText,
+                        #MainText,
+                        #SpoilAppText {
+                            height: 10em;
+                            overflow: scroll;
+                        }
+
+                        span.textbtns {
+                            display: flex !important;
+                            flex-direction: row;
+                            gap: 0.5em;
+                            text-align: center;
+
+                            a {
+                                font-size: 0.8em;
+                                width: 6.5em;
+                            }
+                        }
+
+                        span {
+                            span:nth-child(1) {
+                                max-height: 10em;
+                                overflow: scroll;
+                            }
+                        }
+
+                        ul {
+                            li {
+                                a {
+                                    letter-spacing: 0.05em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 44em) {
+    .main {
+        .main-container {
+            .main-container-inner {
+                .inner-container {
+                    main.info-field {
+                        .usefull-links {
+                            h2 {
+                                text-align: center;
+                            }
+
+                            .links-wrapper {
+                                ul {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 33em) {
+    .main {
+        .main-container {
+            .main-container-inner {
+                .inner-container {
+                    main.info-field {
+                        .usefull-links {
+                            h2 {
+                                text-align: center;
+                            }
+
+                            .links-wrapper {
+                                ul {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
